@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/eventos/index.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Orbit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Cadastro <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Criar Evento</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Perfil
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Visualizar Perfil</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Editar Perfil</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Meus Eventos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Configurações</a>
+                    </div>
+                </li>
+            </ul>
+            
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+              </form>
+        </div>
+    </nav>
+    <!-- Fim da Navbar -->
+
+    <!-- Carrossel -->
+    <div id="carouselExampleCombined" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCombined" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCombined" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCombined" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="/eventos/imagem/slidetres.jpg" alt="Primeiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>South by Southwest (SXSW)</h5>
+                    <p>O maior festival mundial de cultura, inovação e tecnologia.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/eventos/imagem/slidequatro.jpg" alt="Segundo Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Conferência Anual de Startups e Empreendedorismo (CASE)</h5>
+                    <p>Reúne startups e empreendedores de todo o Brasil.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/eventos/imagem/slidecinco.jpg" alt="Terceiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Rio Innovation Week</h5>
+                    <p>Um grande encontro sobre inovação e tecnologia.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCombined" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCombined" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    <!-- Fim do Carrossel -->  
+
+    <!-- Cards dos eventos -->
+    <main class="container">
+        <!-- Seção de introdução -->
+        <div class="media mt-4 mx-3">
+            <div class="media-body">
+                <h5 class="text-center">Orbit: Conectando Você ao Universo dos Eventos</h5>
+                <p>
+                    Orbit é sua plataforma centralizada para descobrir, criar e se conectar com eventos incríveis.
+                </p>
+            </div>
+            <div class="media-logo">
+                <img src="/eventos/imagem/logo.jpg" alt="Orbit">
+            </div>
+        </div>        
+        
+        <!-- Fim da introdução -->
+
+        <br>
+
+        <!-- Cards de Eventos Recentes -->
+        <div class="event-container">
+            <hr class="mx-4 my-4 border-2 text-secondary">
+            <h4 class="fw-bold my-3" style="font-family: 'Georgia', serif; font-size: 1.5rem; color: #1472d1;">
+                Eventos Recentes
+            </h4>
+        </div>  
+        <section class="products-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="product-image">
+                    <img class="d-block w-100" src="/eventos/imagem/card1.jpg" alt="Imagem do evento">
+                </div>
+                <h3>E-book - Brinquedos e brincadeiras para crianças pequenas.</h3>
+                <p>Brincadeira de criança.</p>
+                <a href="https://www.sympla.com.br/play/e-book-brinquedos-e-brincadeiras-para-criancas-pequenas/1759152" class="btn">Visitar</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="product-image">
+                    <img class="d-block w-100" src="/eventos/imagem/card3.png" alt="Imagem do evento">
+                </div>
+                <h3>SEMINÁRIO NEUROBIOLOGIA DO AUTISMO EM CASCAVEL-PR</h3>
+                <p>Especialistas renomados abordando temas atuais  e essenciais</p>
+                <a href="https://www.sympla.com.br/evento/seminario-neurobiologia-do-autismo-em-cascavel-pr/2774910" class="btn">Visitar</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="product-image">
+                    <img class="d-block w-100" src="/eventos/imagem/card4.png" alt="Imagem do evento">
+                </div>
+                <h3>PRODUTIVIDADE MÁXIMA</h3>
+                <p>Ative seu Cérebro, Corpo e Alma com este Evento Exclusivo!</p>
+                <a href="https://www.sympla.com.br/evento/produtividade-maxima-aprenda-os-segredos-para-ser-cada-vez-mais-produtivo/2802655" class="btn">Visitar</a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="product-image">
+                    <img class="d-block w-100" src="/eventos/imagem/card5.png" alt="Imagem do evento">
+                </div>
+                <h3>O PODER DO HÁBITO</h3>
+                <p>Aprenda com modificar seus hábitos</p>
+                <a href="https://www.sympla.com.br/evento/o-poder-do-habito-aprenda-como-modificar-seus-habitos/2809652" class="btn">Visitar</a>
+            </div>
+        </section>
+        <!-- Fim dos Cards recentes-->
+
+        <!-- Categoria, cards-->
+        <div class="event-container">
+            <hr class="mx-4 my-4 border-2 text-secondary">
+            <h4 class="fw-bold my-3" style="font-family: 'Georgia', serif; font-size: 1.5rem; color: #1472d1;">
+                Categoria
+            </h4>
+        </div>  
+        
+        <div class="tech-cards-container">
+            <a href="#" class="tech-card" id="img-6">
+                <div class="card-content">
+                    <h2>TECNOLOGIA</h2>
+                </div>
+            </a>
+    
+            <a href="#" class="tech-card" id="img-7">
+                <div class="card-content">
+                    <h2>MÚSICA</h2>
+                </div>
+            </a>
+    
+            <a href="#" class="tech-card" id="img-8">
+                <div class="card-content">
+                    <h2>CIÊNCIA</h2>
+                </div>
+            </a>
+    
+            <a href="#" class="tech-card" id="img-9">
+                <div class="card-content">
+                    <h2>GASTRONOMIA</h2>
+                </div>
+            </a>
+        </div>
+
+    </main> 
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <!-- Sobre -->
+            <div class="footer-column">
+                <h4>Sobre</h4>
+                <ul>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Missão</a></li>
+                </ul>
+            </div>
+    
+            <!-- Links rápidos -->
+            <div class="footer-column">
+                <h4>Links rápidos</h4>
+                <ul>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contato -->
+            <div class="footer-column">
+                <h4>Contato</h4>
+                <ul>
+                    <li>Email: <a href="mailto:contato@meusite.com">2023309025@ifam.edu.br</a></li>
+                    <li>Telefone: <a href="tel:+5511999999999">(11) 99999-1349</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 <span class="bold">Orbit Eventos</span>.</p>
+        </div>
+    </footer>    
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

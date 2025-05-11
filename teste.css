@@ -1,0 +1,378 @@
+/* Navbar */
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    background: linear-gradient(90deg, #00bfff, #007fff) !important;
+}
+
+.navbar .nav-link, 
+.navbar .navbar-brand, 
+.navbar .dropdown-item {
+    color: white !important;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 191, 255, 0.9) !important;
+    border: 1px solid white;
+}
+
+.navbar-toggler {
+    margin-left: 15px;
+    border-color: white !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='white'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar .nav-link:hover, 
+.navbar .dropdown-item:hover {
+    color: #dfff80 !important;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.btn-outline-success {
+    border-color: white !important;
+    color: white !important;
+}
+
+.btn-outline-success:hover {
+    background-color: white !important;
+    color: #00bfff !important;
+}
+
+/* Carrossel */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Introdução */
+.media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    text-align: justify;
+    border: none;
+}
+
+.media img {
+    width: 100%;
+    height: auto;
+    max-width: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.media-body {
+    flex: 1;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.media-logo {
+    display: block;
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* Seção de eventos */
+.event-container {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+/* Cards dos eventos */
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.card {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: justify;
+    border: none;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border: 2px solid #007bff;
+}
+
+.product-image {
+    height: 140px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+h3,
+p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+}
+
+h3:hover {
+    white-space: normal;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 10;
+    position: absolute;
+    width: max-content;
+    max-width: 200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Cards de categoria */
+.tech-cards-container {
+    display: flex; 
+    gap: 15px; 
+    overflow-x: auto; 
+    padding: 5px; 
+    white-space: nowrap; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#img-6 {
+    background-image: url(/eventos/imagem/tec.jpg);
+}
+
+#img-7 {
+    background-image: url(/eventos/imagem/musica.jpg);
+}
+
+#img-8 {
+    background-image: url(/eventos/imagem/ciencia.jpg);
+}
+
+#img-9 {
+    background-image: url(/eventos/imagem/gastronomia.jpg);
+}
+
+.tech-card {
+    display: block;
+    width: 250px; 
+    height: 200px; 
+    background-size: cover; 
+    background-position: center; 
+    text-decoration: none; 
+    color: white; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 2px 2px 5px rgba(232, 211, 211, 0.3); 
+    transition: transform 0.2s ease; 
+}
+
+.tech-card:focus, .tech-card:hover {
+    outline: none;
+    transform: scale(1.05); 
+    box-shadow: 2px 2px 5px rgba(232, 211, 211, 0.3);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    padding: 20px;
+    background-color: rgba(9, 40, 194, 0.5); 
+}
+
+.card-content h2 {
+    margin-bottom: 10px; 
+}
+
+/* Rodapé */
+footer {
+    margin-top: 30px;
+    background: linear-gradient(90deg, #00bfff, #007fff);
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: #00bfff;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsividade progressiva */
+@media (max-width: 1024px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    .products-container {
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.85rem;
+    }
+
+    .products-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .tech-cards-container {
+        flex-direction: column;
+    }
+
+    .tech-card {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .tech-card {
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+}

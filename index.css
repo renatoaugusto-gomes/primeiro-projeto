@@ -204,19 +204,19 @@ h3:hover {
 }
 
 #img-6 {
-    background-image: url(/eventos/imagem/tec.jpg);
+    background-image: url(tec.jpg);
 }
 
 #img-7 {
-    background-image: url(/eventos/imagem/musica.jpg);
+    background-image: url(musica.jpg);
 }
 
 #img-8 {
-    background-image: url(/eventos/imagem/ciencia.jpg);
+    background-image: url(ciencia.jpg);
 }
 
 #img-9 {
-    background-image: url(/eventos/imagem/gastronomia.jpg);
+    background-image: url(gastronomia.jpg);
 }
 
 .tech-card {
